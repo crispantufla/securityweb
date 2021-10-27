@@ -1,0 +1,262 @@
+/*-- FabiLeone CSS --*/
+
+
+/*-- Nav --*/
+
+.vlt-navbar--fixed .vlt-navbar-logo img {
+    height: 80px;
+}
+
+
+/*-  Header Home -*/
+
+.c-header-tittle {
+    font-size: 65px;
+}
+
+
+/*--- General styling --*/
+
+.vlt-section-title--style-1 .vlt-section-title__subtitle {
+    margin-bottom: 5px;
+}
+
+.vlt-section-title--style-1 .vlt-section-title__subtitle {
+    color: #001338;
+}
+
+.c-color-tittle-w {
+    color: #fff !important;
+}
+
+.vlt-navbar.vlt-navbar--white-text-on-top {
+    color: #000;
+}
+
+
+/*-- Certificaciones logos --*/
+
+.logo-certificaciones {
+    height: auto;
+}
+
+.logo-certificaciones-fix {
+    height: auto;
+    max-height: 165px;
+}
+
+
+/*-- Hero Section Video --*/
+
+#myVideo {
+    display: block;
+    position: relative;
+    z-index: -10;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #myVideo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.video-container {
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    height: 100vh;
+}
+
+.c-slide-video-text {
+    color: #000 !important;
+}
+
+.c-fix-margin {
+    margin-top: 60vh;
+}
+
+
+/*-- Logo carousel certificaciones --*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* MOUSE SCROLL ANIMATION */
+
+.c-header-video {
+    position: relative;
+}
+
+#mouse_body {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 32px;
+    position: absolute;
+    bottom: 20px;
+    /* size of the mouse body */
+    height: 43px;
+    width: 23px;
+    /* to center in browser */
+    margin: 0 auto;
+    z-index: 1000;
+}
+
+#mouse_wheel {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 8px;
+    background-color: #000;
+    /* position property required to play animation  */
+    position: relative;
+    height: 3px;
+    width: 3px;
+    /* to center wheel in mouse body */
+    margin: 0 auto;
+    animation: wheel_animation 1.5s linear infinite;
+}
+
+
+/* include use -moz-, -webkit-, or -o- for respective browser type*/
+
+@keyframes wheel_animation {
+    0% {
+        opacity: 0;
+        top: 2px;
+    }
+    50% {
+        opacity: 1;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 33px;
+    }
+}
+
+
+/*-- Case of study --*/
+
+.has-black-background-color {
+    background-color: #000c1e;
+}
+
+#servicios-tittle {
+    font-size: 65px;
+}
+
+.vlt-gap-100 {
+    height: 25px;
+}
+
+.vlt-cases-slider {
+    text-align: left;
+}
+
+.vlt-cases-slider__description {
+    margin-top: 0px !important;
+}
+
+.servicios-c-padding {
+    padding: 80px 0;
+}
+
+
+/*-- Final Section --*/
+
+#c-final-quote {
+    font-size: 45px;
+}
+
+.has-primary-background-color {
+    background-color: #001338;
+}
+
+
+/*-- General Breakpoints --*/
+
+.c-tittle {
+    font-size: 45px !important;
+}
+
+.c-small-tittle {
+    font-size: 14px !important;
+}
+
+.c-general-text {
+    font-size: 21px !important;
+}
+
+@media all and (max-width: 479px) {
+    .disable-sm {
+        display: none;
+    }
+    .sm-small-gap {
+        padding-top: 40px;
+    }
+    .sm-medium-gap {
+        padding-top: 80px;
+    }
+    .c-padding-sm {
+        padding: 0;
+    }
+    /*- Text -*/
+    .c-tittle {
+        font-size: 30px !important;
+    }
+    .c-general-text {
+        font-size: 18px !important;
+    }
+}
+
+
+/*--Footer --*/
+
+.vlt-footer {
+    background-color: #000c1e;
+}
+
+.vlt-footer--style-1 {
+    background-image: url(../img/root/Final/footer-shape-1.png);
+}
