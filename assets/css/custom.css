@@ -265,11 +265,11 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 51;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgb(0, 12, 31);
+    background-color: rgba(0, 12, 31, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
     backdrop-filter: saturate(180%) blur(5px);
@@ -315,4 +315,10 @@
         top: 15px;
         right: 35px;
     }
+}
+
+.legal-warning-inner-text {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
 }
