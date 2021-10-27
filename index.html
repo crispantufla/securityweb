@@ -149,44 +149,38 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="swiper" id="cris-swiper" style="width: 1000px; height: 300px;">
+                        <div class="swiper" id="cris-swiper">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="col-sm-6 col-md-2">
-                                        <div class="vlt-partner vlt-partner--center">
-                                            <a href="#"><img src="assets/img/certificaciones/CCNA-logo.png" alt="" loading="lazy" class="logo-certificaciones"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-2">
-                                        <div class="vlt-partner vlt-partner--center">
-                                            <a href="#"><img src="assets/img/certificaciones/CPHE.png" alt="" loading="lazy" class="logo-certificaciones"></a>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-2">
-                                        <!--Partner-->
-                                        <div class="vlt-partner vlt-partner--center">
-                                            <a href="#"><img src="assets/img/certificaciones/Offensive-OSCP.png" alt="" loading="lazy" class="logo-certificaciones"></a>
-                                        </div>
+                                    <div class="vlt-partner vlt-partner--center">
+                                        <a href="#"><img src="assets/img/certificaciones/CCENT.png" alt="" loading="lazy" class="logo-certificaciones"></a>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="col-sm-6 col-md-2">
-                                        <!--Partner-->
-                                        <div class="vlt-partner vlt-partner--center">
-                                            <a href="#"><img src="assets/img/certificaciones/Offensive-OSCP.png" alt="" loading="lazy" class="logo-certificaciones"></a>
-                                        </div>
+                                    <!--Partner-->
+                                    <div class="vlt-partner vlt-partner--center">
+                                        <a href="#"><img src="assets/img/certificaciones/CCNA-logo.png" alt="" loading="lazy" class="logo-certificaciones"></a>
                                     </div>
-                                    <div class="col-sm-6 col-md-2">
-                                        <div class="vlt-partner vlt-partner--center">
-                                            <a href="#"><img src="assets/img/certificaciones/CCNA-logo.png" alt="" loading="lazy" class="logo-certificaciones"></a>
-                                        </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <!--Partner-->
+                                    <div class="vlt-partner vlt-partner--center">
+                                        <a href="#"><img src="assets/img/certificaciones/CPHE.png" alt="" loading="lazy" class="logo-certificaciones"></a>
                                     </div>
-                                    <div class="col-sm-6 col-md-2">
-                                        <div class="vlt-partner vlt-partner--center">
-                                            <a href="#"><img src="assets/img/certificaciones/CPHE.png" alt="" loading="lazy" class="logo-certificaciones"></a>
-                                        </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <!--Partner-->
+                                    <div class="vlt-partner vlt-partner--center">
+                                        <a href="#"><img src="assets/img/certificaciones/eWPT.png" alt="" loading="lazy" class="logo-certificaciones"></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <!--Partner-->
+                                    <div class="vlt-partner vlt-partner--center">
+                                        <a href="#"><img src="assets/img/certificaciones/Offensive-OSCP.png" alt="" loading="lazy" class="logo-certificaciones"></a>
                                     </div>
                                 </div>
                             </div>
@@ -788,13 +782,33 @@
     <script>
         const swiper = new Swiper('#cris-swiper', {
             // Optional parameters
-            direction: 'horizontal',
+            slidesPerView: 3, //Cuantos se ven
+            slidesPerGroup: 3, // De a cuantos avanza
+            centeredSlides: true,
+            //spaceBetween: 30, // Fuerza separacion entre ellos sin clase
+            //freeMode: true, // te deja moverlo libremente y no por grupo ( probalo )
             loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
+            loopFillGroupWithBlank: false,
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
             },
-            // Navigation arrows
+            autoplay: {
+                delay: 3500,
+            },
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
