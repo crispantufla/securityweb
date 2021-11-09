@@ -321,3 +321,17 @@
     background-color: rgba(255, 255, 255, 0.9);
     padding: 30px;
 }
+
+
+/*-- Hero Section --*/
+.c-tittle-herosection {
+    font-size: 60px;
+    
+}
+.c-tittle-herosection-container {
+    text-align: center;
+    margin: 0 auto;
+}
+.c-hero-section {
+    background-image: url('assets/img/Clientes/client-07.png');
+}
