@@ -335,3 +335,71 @@
 .c-hero-section {
     background-image: url('assets/img/Clientes/client-07.png');
 }
+
+/*-- New Services --*/
+.c-ss-services-container {
+    box-shadow: 0 0 8px 0px #00000026;
+}
+.c-ss-service-01, .c-ss-service-02 {
+    display: flex;
+    background: #fff;
+}
+.c-ss-containertext {
+    padding: 60px 40px;
+}
+.c-ss-containertext {
+    align-self: center;
+}
+.c-ss-containerimage, .c-ss-containertext {
+    width: 50%;
+}
+.c-ss-containerimage img {
+    width: 100%;
+}
+.c-ss-service-02 .c-ss-containerimage {
+    order: 2;
+}
+.c-ss-tittle-01, .c-ss-tittle-02 {
+    text-align: center;
+}
+.c-ss-tittle-01 {
+    margin: 0 auto;
+}
+.c-ss-service-01 .c-ss-containerimage {
+    background-image: url(../img/services/image-service-01.jpg);
+    background-size: cover;
+    padding: 200px 0;
+}
+.c-ss-service-02 .c-ss-containerimage {
+    background-image: url(../img/services/image-service-02.jpg);
+    background-size: cover;
+    padding: 200px 0;
+}
+
+@media all and (max-width: 1024px) {
+    .c-ss-containertext {
+        padding: 15px 40px;
+    }
+}
+@media all and (max-width: 768px) {
+    .c-ss-service-01, .c-ss-service-02 {
+        flex-direction: column;
+    }
+    .c-ss-containerimage, .c-ss-containertext {
+        width: 100%;
+        flex-direction: column;
+    }
+    .c-ss-containertext {
+        padding: 15px 10px;
+    }
+    .c-ss-service-02 .c-ss-containerimage {
+        order: inherit;
+    }
+}
+@media all and (max-width: 575px) {
+    .c-ss-services-container {
+        padding: 0 5%;
+    }
+    
+    
+}
