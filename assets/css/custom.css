@@ -226,7 +226,11 @@
 .c-general-text {
     font-size: 21px !important;
 }
-
+@media all and (max-width: 768px) {
+    .disable-t {
+        display: none;
+    }
+}
 @media all and (max-width: 479px) {
     .disable-sm {
         display: none;
@@ -375,7 +379,13 @@
     background-size: cover;
     padding: 200px 0;
 }
-
+.c-ss-list {
+    padding: 0 5px;
+    list-style: none;
+}
+.c-ss-separator {
+    margin-top: 40px;
+}
 @media all and (max-width: 1024px) {
     .c-ss-containertext {
         padding: 15px 40px;
@@ -395,10 +405,19 @@
     .c-ss-service-02 .c-ss-containerimage {
         order: inherit;
     }
+    .c-ss-tittle-02 {
+        padding-bottom: 15px;
+    }
+    .c-ss-service-01 .c-ss-containerimage, .c-ss-service-02 .c-ss-containerimage {
+        padding: 150px 0;
+    }
 }
 @media all and (max-width: 575px) {
     .c-ss-services-container {
         padding: 0 5%;
+    }
+    .c-ss-service-01 .c-ss-containerimage, .c-ss-service-02 .c-ss-containerimage {
+        padding: 100px 0;
     }
     
     
