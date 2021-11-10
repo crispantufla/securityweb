@@ -226,11 +226,13 @@
 .c-general-text {
     font-size: 21px !important;
 }
+
 @media all and (max-width: 768px) {
     .disable-t {
         display: none;
     }
 }
+
 @media all and (max-width: 479px) {
     .disable-sm {
         display: none;
@@ -266,7 +268,7 @@
 
 .cg-overlay {
     height: 100%;
-    width: 0;
+    width: 100%;
     position: fixed;
     z-index: 51;
     top: 0;
@@ -283,7 +285,6 @@
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
     text-align: -webkit-center;
     font-weight: bold;
 }
@@ -304,7 +305,6 @@
 
 .cg-overlay .cg-closebtn {
     position: absolute;
-    top: 80px;
     right: 45px;
     font-size: 60px;
 }
@@ -328,74 +328,128 @@
 
 
 /*-- Hero Section --*/
+
 .c-tittle-herosection {
     font-size: 60px;
-    
 }
+
 .c-tittle-herosection-container {
     text-align: center;
     margin: 0 auto;
 }
+
 .c-hero-section {
     background-image: url('assets/img/Clientes/client-07.png');
 }
 
+
 /*-- New Services --*/
+
 .c-ss-services-container {
     box-shadow: 0 0 8px 0px #00000026;
 }
-.c-ss-service-01, .c-ss-service-02 {
+
+.c-ss-service-01,
+.c-ss-service-02 {
     display: flex;
     background: #fff;
 }
+
 .c-ss-containertext {
     padding: 60px 40px;
 }
+
 .c-ss-containertext {
     align-self: center;
 }
-.c-ss-containerimage, .c-ss-containertext {
+
+.c-ss-containerimage,
+.c-ss-containertext {
     width: 50%;
 }
+
 .c-ss-containerimage img {
     width: 100%;
 }
+
 .c-ss-service-02 .c-ss-containerimage {
     order: 2;
 }
-.c-ss-tittle-01, .c-ss-tittle-02 {
+
+.c-ss-tittle-01,
+.c-ss-tittle-02 {
     text-align: center;
 }
+
 .c-ss-tittle-01 {
     margin: 0 auto;
 }
+
 .c-ss-service-01 .c-ss-containerimage {
     background-image: url(../img/services/image-service-01.jpg);
     background-size: cover;
     padding: 200px 0;
 }
+
 .c-ss-service-02 .c-ss-containerimage {
     background-image: url(../img/services/image-service-02.jpg);
     background-size: cover;
     padding: 200px 0;
 }
+
 .c-ss-list {
     padding: 0 5px;
     list-style: none;
 }
+
 .c-ss-separator {
     margin-top: 40px;
 }
+
+.background-cg {
+    background-image: url('../img/bg-huella.jpg');
+    width: 100%;
+}
+
+.container-contacto {
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+.shield-logo {
+    height: 70%;
+    content: url('../img/shield-nobg.png');
+}
+
+.contact-content-text {
+    color: white;
+    font-size: 18px;
+    max-width: 30%;
+}
+
+.consult-content-logo {
+    width: 60%;
+    content: url('../img/Bg-contacto.jpg');
+}
+
 @media all and (max-width: 1024px) {
     .c-ss-containertext {
         padding: 15px 40px;
     }
+    .consult-content-logo {
+        width: 100%;
+        content: url('../img/Bg-contacto.jpg');
+        margin-bottom: 30px;
+    }
 }
+
 @media all and (max-width: 768px) {
-    .c-ss-service-01, .c-ss-service-02 {
+    .c-ss-service-01,
+    .c-ss-service-02 {
         flex-direction: column;
     }
-    .c-ss-containerimage, .c-ss-containertext {
+    .c-ss-containerimage,
+    .c-ss-containertext {
         width: 100%;
         flex-direction: column;
     }
@@ -408,17 +462,42 @@
     .c-ss-tittle-02 {
         padding-bottom: 15px;
     }
-    .c-ss-service-01 .c-ss-containerimage, .c-ss-service-02 .c-ss-containerimage {
+    .c-ss-service-01 .c-ss-containerimage,
+    .c-ss-service-02 .c-ss-containerimage {
         padding: 150px 0;
     }
+    .consult-content-logo {
+        width: 100%;
+        content: url('../img/Bg-contacto.jpg');
+    }
+    .shield-logo {
+        width: 70%;
+    }
 }
+
 @media all and (max-width: 575px) {
     .c-ss-services-container {
         padding: 0 5%;
     }
-    .c-ss-service-01 .c-ss-containerimage, .c-ss-service-02 .c-ss-containerimage {
+    .c-ss-service-01 .c-ss-containerimage,
+    .c-ss-service-02 .c-ss-containerimage {
         padding: 100px 0;
     }
-    
-    
+    .shield-logo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .consult-content-logo {
+        width: 100%;
+        content: url('../img/Bg-contacto.jpg');
+    }
+    .shield-logo {
+        width: 70%;
+        margin-top: 10px;
+    }
+    .contact-content-text {
+        color: white;
+        font-size: 18px;
+        max-width: 50%;
+    }
 }
