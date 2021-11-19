@@ -499,6 +499,19 @@
     .contact-content-text {
         color: white;
         font-size: 18px;
-        max-width: 50%;
+        max-width: 80%;
     }
+    .cc-fix-pad {
+        height: 40px;
+    }
+}
+
+/*-- Footer CSS --*/
+#footer-links ul li a {
+    cursor: pointer;
+}
+#legal-warning .cg-overlay-content {
+    max-width: 1080px;
+    margin: 0 auto;
+    top: 10%;
 }
